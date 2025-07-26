@@ -46,8 +46,7 @@ function generarNumeroSecreto() {
     //si ya sorteamos todos los números
     if (listaNumerosSorteados.length == numeroMaximo) {
         asignarTextoElemento('p', 'Ya se sortearon todos los números posibles. Reiniciando...');
-        document.querySelector('#intentar').setAttribute('disabled', 'true');
-        // Recargar después de 3 segundos
+        // Recargar después de 3 segundos la página
         setTimeout(() => {
             location.reload();
         }, 3000);
